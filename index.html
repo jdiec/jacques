@@ -590,7 +590,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             
             //$(this).parent().animate({left: "-2000px"}, 800);
             $("#portfoliocontainer").hide(800);
-            $(item).show(800);
+            $(item).delay(800).show(800);
          
             //$("#greaterportfoliocontainer").css("background-color", "#FFFFFF");
         });
@@ -599,7 +599,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             
             $(this).parent().hide(800);
             //$("#mainwrapper .box").animate({left: "0px"}, 800);
-            $("#portfoliocontainer").show(800);
+            $("#portfoliocontainer").delay(800).show(800);
             //$("#greaterportfoliocontainer").css("background-color", "#F0F0F0");
         });
         

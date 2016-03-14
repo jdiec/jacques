@@ -71,6 +71,49 @@ html, body {
     top:20px;
 }
 
+/*
+#skills p, #skills i{
+    font-family: 'Pontano Sans', sans-serif; 
+    font-size: 12pt;
+    color:#999;
+    font-weight: bold;
+}
+*/
+
+#skills h1{
+/*    color:#996633;*/
+    font-family: 'Poiret One', cursive;
+    font-size: 14pt;
+    color: #909090; 
+    font-weight: bold;   
+}
+
+.fa-circle-o{
+    color: #c99065;
+    margin-right: 5px;
+}
+
+.fa-circle-thin{
+    color: #909090; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.fa-plus-circle{
+    color: #909090;
+    font-size: 16pt;
+    margin-right: 8px;
+}
+
+.skilllabel{
+    position: relative;
+    right: 30px;
+}
+
+
+
+
+
 .carousel {
     background:#1A237E;
 }

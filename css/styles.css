@@ -83,9 +83,10 @@ html, body {
 #skills h1{
 /*    color:#996633;*/
     font-family: 'Poiret One', cursive;
-    font-size: 14pt;
+    font-size: 13pt;
     color: #909090; 
-    font-weight: bold;   
+    font-weight: bold;
+    margin-right: 200px;
 }
 
 .fa-circle-o{

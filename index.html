@@ -116,7 +116,7 @@
 <div class="container">
     <div id="skills" class="row row-content">
         <p style="padding:30px;"></p>
-        <h1 class="text-center" style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt; font-weight: normal;">Skills</h1>
+        <h2 class="text-center" style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt; font-weight: normal;">Skills</h2>
         <p style="padding:30px;" class="hidden-xs"></p>
         <p style="padding: 10px;" class="visible-xs"></p>
         
@@ -152,7 +152,7 @@
         
         <div class="visible-xs col-xs-12 col-xs-push-2">
             <div class="skilllabel">
-            <button data-toggle="collapse" data-target="#designdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus-circle"></i> <h1 style="display: inline;">Design</h1></button>
+            <button data-toggle="collapse" data-target="#designdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus"></i> <h1 style="display: inline;">Design</h1></button>
             </div>
             <p style="padding: 1px;"></p>
             <i class="fa fa-circle-o"></i>
@@ -185,7 +185,7 @@
         
         <div class="visible-xs col-xs-12 col-xs-push-2">
             <div class="skilllabel">
-            <button data-toggle="collapse" data-target="#fineartsdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus-circle"></i> <h1 style="display: inline;">Fine Arts</h1></button>
+            <button data-toggle="collapse" data-target="#fineartsdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus"></i> <h1 style="display: inline;">Fine Arts</h1></button>
             </div>
             <p style="padding: 1px;"></p>
             <i class="fa fa-circle-o"></i>
@@ -214,7 +214,7 @@
         
         <div class="visible-xs col-xs-12 col-xs-push-2">
             <div class="skilllabel">
-            <button data-toggle="collapse" data-target="#writingdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus-circle"></i> <h1 style="display: inline;">Writing</h1></button>
+            <button data-toggle="collapse" data-target="#writingdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus"></i> <h1 style="display: inline;">Writing</h1></button>
             </div>
             <p style="padding: 1px;"></p>
             <i class="fa fa-circle-o"></i>
@@ -240,7 +240,7 @@
         
         <div class="visible-xs col-xs-12 col-xs-push-2">
             <div class="skilllabel">
-                <button data-toggle="collapse" data-target="#codingdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus-circle"></i> <h1 style="display: inline;">Coding</h1></button>
+                <button data-toggle="collapse" data-target="#codingdiv" style="padding: 0; border: none; background: none;"><i class="fa fa-plus"></i> <h1 style="display: inline;">Coding</h1></button>
             </div>
             <p style="padding: 1px;"></p>
             <i class="fa fa-circle-o"></i>
@@ -741,6 +741,22 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         });
     
     </script>
+    
+    <script>
+    //Skills section
+        //Change + and - icons on collapse/expand
+        $('.collapse').on('shown.bs.collapse', function() {
+            var anc = this.closest('.visible-xs');
+            var child = $(anc).find('.fa-plus');
+            $(child).addClass('fa-minus').removeClass('fa-plus');
+        });
+        $('.collapse').on('hidden.bs.collapse', function() {
+            var anc = this.closest('.visible-xs');
+            var child = $(anc).find('.fa-minus');
+            $(child).addClass('fa-plus').removeClass('fa-minus');
+        });
+    </script>
+    
     
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

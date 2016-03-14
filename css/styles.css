@@ -95,7 +95,7 @@ html, body {
 /*    color: #c43d73;*/
     margin-right: 5px;
     position: relative; 
-    left: 20px;
+    left: 15px;
 }
 
 .fa-circle-thin{
@@ -103,7 +103,7 @@ html, body {
     display: inline-block;
     margin-right: 5px;
     position: relative; 
-    left: 20px;
+    left: 15px;
 }
 
 .fa-plus-circle, .fa-plus, .fa-minus{

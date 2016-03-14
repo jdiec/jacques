@@ -104,6 +104,7 @@ html, body {
     margin-right: 5px;
     position: relative; 
     left: 15px;
+    font-size: 9pt;
 }
 
 .fa-plus-circle, .fa-plus, .fa-minus{

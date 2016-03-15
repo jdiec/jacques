@@ -155,6 +155,9 @@ html, body {
     background-color: #FFFFFF;
 }
 
+
+
+
 /*Box styling*/
 #mainwrapper {
   font: 10pt normal Arial, sans-serif;
@@ -400,6 +403,11 @@ html, body {
     box-shadow: 10px 10px 5px #888888;
 
 }
+
+
+
+
+
 
 .floating-label-form-group {
     position: relative;

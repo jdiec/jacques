@@ -313,12 +313,10 @@
 </div>
 -->
 
-<div id="greaterportfoliocontainer" style="background-color: #e5eaee;"> <!-- #e5eaee #F0F0F0;-->
+<div id="greaterportfoliocontainer" style="background-color: #e5eaee; display: block;"> <!-- #e5eaee #F0F0F0;-->
 <div id ="portfolio" class="row row-content">
     <p style="padding:30px;"></p>
     <h1 class="text-center" style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt;">Portfolio</h1>
-
-    
 
 <div id="portfoliocontainer" class="container-fluid">
     
@@ -391,7 +389,7 @@
         
         <div>
         <center><h3 style="color: #000000;">Overview</h3></center>
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2">
             Stepvolution is an Android-based mobile application that aims to increase daily physical activity through walking amongst sedentary young adults.  By using the phone’s accelerometer and GPS sensors, the application tracks the user’s daily step count and documents the locations in which they occur.  In addition, the application provides persuasive (positive reinforcement) techniques via emotional feedback messages and images that serve as indicators of the user’s progress throughout the day.  While there are a plethora of mobile-based applications (e.g. Moves) and wearable devices (e.g. pedometers) that collect real-time data on physical activity and location, very few of them address the psychological implications of exercise and thus fail to provide persuasive functionalities, which in the long-run, hinders progress by decreasing the user’s incentive and interest. 
             
             <center><h3 style="color: #000000;">Background</h3></center>
@@ -567,12 +565,14 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
 </div>
 </div>
 
+<!--
 <div class="background background-img3">
     <p style="padding:50px;"></p>
     <center><h4 style="color:#FFFFFF; font-family: 'Indie Flower', cursive; font-size: 14pt;">Beauty is but a shell without</h4></center>
     <center><h4 style="color:#FFFFFF; font-family: 'Indie Flower', cursive; font-size: 14pt;">empathy.</h4></center>
     <p style="padding:50px;"></p>
 </div>
+-->
  
 <div class="container">    
 <div id ="contact" class="row row-content">
@@ -664,8 +664,8 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     $(document).ready(function(){
       $(window).scroll(function() { // check if scroll event happened
         if ($(document).scrollTop() > 800) { // check if user scrolled more than 50 from top of the browser window
-          $(".navbar-fixed-top").css("background-color", "#000000"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)  
-          $(".nav-pills>li>a").css("color", "#FFFFFF");
+          $(".navbar-fixed-top").css("background-color", "#000000").css("opacity", "0.8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)  
+          $(".nav-pills>li>a").css("color", "#FFFFFF").css("opacity", "1");
           //$(".nav-pills>li.active>a").css("color", "#000000");
           $(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");
         } else {
@@ -737,18 +737,23 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             var item = "#" + this.id + "container";
             
             //$(this).parent().animate({left: "-2000px"}, 800);
-            $("#portfoliocontainer").hide(800);
+            $("#portfoliocontainer").hide(400);
             //$("#portfoliocontainer").hide( "explode", {pieces: 16 }, 2000 );
-            $(item).delay(800).show(800);
+            $(item).delay(400).show(400);
          
             //$("#greaterportfoliocontainer").css("background-color", "#FFFFFF");
+            
+            
+        
+
+            
         });
         
         $(".return").click(function(){
             
-            $(this).parent().hide(800);
+            $(this).parent().hide(400);
             //$("#mainwrapper .box").animate({left: "0px"}, 800);
-            $("#portfoliocontainer").delay(800).show(800);
+            $("#portfoliocontainer").delay(400).show(400);
             //$("#greaterportfoliocontainer").css("background-color", "#F0F0F0");
         });
         
@@ -756,13 +761,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         
         
         
-        
 
-
-
-        
-        
-        
         
         $(".return").mouseover(function(){
            this.src = "img/returnb.png"; 

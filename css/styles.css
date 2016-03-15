@@ -436,7 +436,8 @@ html, body {
 
 .form-group label{
 /*  margin-left: 0px;*/
-  background: #fff;
+/*  background: #fff;*/
+  color: red;
   padding: 2px 5px;
   position: absolute;
   font-size: 12px;
@@ -453,7 +454,8 @@ html, body {
   margin-top: 5px;
 }
 
-a.btn-submit {
+a.btn-submit, #submitbutton {
+    background-color: Transparent;
     font-size: 18pt;
     color: #909090;
     border-style: solid;
@@ -464,7 +466,7 @@ a.btn-submit {
     left: 35%;
 }
 
-a.btn-submit:hover{
+a.btn-submit:hover, #submitbutton:hover{
     color: black;
     border-color: black;
 }

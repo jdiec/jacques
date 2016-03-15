@@ -594,24 +594,27 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     <p style="padding:5px;"></p>
         
     <div class="col-lg-8 col-lg-offset-2">
-        <form name="contactForm" id="contactForm" novalidate>
+        <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST">
+            <input type="text" name="_gotcha" style="display:none" />
             <div class="form-group floating-label-form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" placeholder="Name" id="name" required>
+                <input type="text" class="form-control" placeholder="Name" id="name" name="Name" required>
             </div>
             <div class="form-group floating-label-form-group">
                 <label>Email</label>
-                <input type="text" class="form-control" placeholder="Email" id="email">
+                <input type="text" class="form-control" placeholder="Email" id="email" name="_replyto" required>
             </div>
             <div class="form-group floating-label-form-group">
                 <label>Phone</label>
-                <input type="text" class="form-control" placeholder="Phone" id="phone">
+                <input type="text" class="form-control" placeholder="Phone" id="phone" name="Phone">
             </div>
             <div class="form-group floating-label-form-group">
                 <label>Message</label>
-                <textarea rows="1" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                <textarea rows="1" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." name="Message"></textarea>
             </div>
-            <a class="btn btn-submit">Send    <i class="fa fa-paper-plane-o"></i></a>
+<!--            <a class="btn btn-submit"> Send <i class="fa fa-paper-plane-o"></i></a>-->
+            <input id="submitbutton" type="submit" value="Send">
+            
         </form>
     </div>
     
@@ -841,9 +844,15 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     
     </script>
     
-
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    
+    <script>
+        $('#contactForm').validate();
+    </script>
 
 </body>
 </html>

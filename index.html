@@ -602,7 +602,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             </div>
             <div class="form-group floating-label-form-group">
                 <label>Email</label>
-                <input type="text" class="form-control" placeholder="Email" id="email" name="_replyto" required>
+                <input type="text" class="form-control" placeholder="Email" id="email" name="Email" required>
             </div>
             <div class="form-group floating-label-form-group">
                 <label>Phone</label>
@@ -851,7 +851,24 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     
     <script>
-        $('#contactForm').validate();
+        
+        $('#contactForm').validate({
+            rules: {
+                Name: {
+                    required: true
+                },
+                Email: {
+                    required: true,
+                    email: true
+                },
+                Phone: {
+                    digits: true
+                },
+                Message: {
+                    required: true;
+                }
+            }
+        });
     </script>
 
 </body>

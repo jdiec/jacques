@@ -468,8 +468,9 @@ a.btn-submit, #submitbutton {
 }
 
 a.btn-submit:hover, #submitbutton:hover{
-    color: black;
-    border-color: black;
+    color: #e5eaee;
+    border-color: #e5eaee;
+    background-color: #00CC00;
 }
 
 .row-footer {

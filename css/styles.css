@@ -27,6 +27,11 @@ html, body {
     background-image: url('../img/snow.png');
 }
 
+.background-art{
+    background-image: url('../img/gray.jpg');
+}
+
+
 .text-center img{
     display: block;
     margin-left: auto;
@@ -401,11 +406,20 @@ html, body {
     height: 200px;
     width: 180px;
     margin: 20px;
-    box-shadow: 10px 10px 5px #888888;
+/*    box-shadow: 10px 10px 5px #888888;*/
 
 }
 
+#box-6container h4{
+    font-size: 18pt;
+    color: #FFFFFF;
+    font-family: 'Shadows Into Light', cursive;
+}
 
+.artcontainer{
+    background-color: rgba(64,64,64, 0.8);
+    padding: 120px 100px 150px 0px;
+}
 
 
 

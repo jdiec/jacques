@@ -560,7 +560,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         
 <!--        <p style="padding:50px;"></p>-->
 
-        <div class="artcontainer container-fluid" style="background-color: rgba(32,32,48,0.7);">
+        <div class="artcontainer container-fluid" style="background-color: rgba(16,0,0,0.7);">
         <center><h4>Print</h4></center>
         <div class="col-xs-12 col-sm-12 col-sm-push-1">
             <img src="art/1.jpg">
@@ -610,10 +610,20 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
 <div id ="contact" class="row row-content">
     <p style="padding:30px;"></p>
     <h1 class="text-center"  style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt;">Contact</h1>
-    <p style="padding:10px;"></p>
+    <p style="padding:5px;"></p>
+    <svg id = "divider" class= "" width = "100" height = "5">
+        <line x1="0" y1="1" x2="250" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+    </svg>
+    <p style="padding: 5px;"></p>
+    <center><p style="font-size: 12pt; color: #989898; font-family: 'Noto Sans', sans-serif;">Alternatively, you can email me at</br> <a id="emaillink" style="" href="mailto:jpd276@cornell.edu">jpd276@cornell.edu</a>.</p></center>
+<!--
+    <svg id = "divider" class= "hidden-xs" width = "100" height = "5">
+        <line x1="0" y1="1" x2="250" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+    </svg>
+-->
     <div class="col-xs-12 col-sm-8 col-sm-push-2">
 <!--    <center>Let's work together.</center>-->
-    <p style="padding:5px;"></p>
+    <p style="padding:7px;"></p>
         
     <div class="col-lg-8 col-lg-offset-2">
         <form name="contactForm" id="contactForm" action="//formspree.io/jpd276@cornell.edu" method="POST">
@@ -781,7 +791,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             console.log(item);
             console.log(color);
             
-            $("#greaterportfoliocontainer").css("background-color", color);
+        //    $("#greaterportfoliocontainer").css("background-color", color);
             
 
         
@@ -885,8 +895,8 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
                     required: true
                 },
                 Email: {
-                    required: true,
-                    email: true
+                    required: true
+                    //email: true
                 },
                 Phone: {
                     digits: true

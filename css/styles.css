@@ -469,6 +469,17 @@ html, body {
   margin-top: 5px;
 }
 
+#emaillink{
+    text-decoration: none;
+    color: #989898;
+}
+
+#emaillink:hover{
+/*    font-weight: bold;*/
+    color: red;
+/*    color: #996633;*/
+}
+
 a.btn-submit, #submitbutton {
     background-color: Transparent;
     font-size: 18pt;

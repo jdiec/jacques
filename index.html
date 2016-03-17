@@ -835,7 +835,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             
             $(this).parent().hide(400);
             //$("#mainwrapper .box").animate({left: "0px"}, 800);
-            $("#portfoliocontainer").delay(400).show(400);
+            $("#portfoliocontainer").delay(400).show("explode", {pieces:20}, 800);
             //$("#greaterportfoliocontainer").css("background-color", "#F0F0F0");
         });
         

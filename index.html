@@ -731,6 +731,18 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     <script src="js/bootstrap.min.js"></script>
 <!--    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 
+
+<!--UI EFFECTS SCRIPT-->
+<!--    <script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<!--    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>-->
+
+<!--VALIDATE SCRIPT-->
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+
     
     <script>
     $(document).ready(function(){
@@ -796,11 +808,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     </script>
     
     
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    
-    <script type = "text/javascript" 
-         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">            </script>
+
     
     <script type = "text/javascript" language = "javascript">
     //Portfolio animations
@@ -808,10 +816,11 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             
             var item = "#" + this.id + "container";
             
-            //$(this).parent().animate({left: "-2000px"}, 800);
-            $("#portfoliocontainer").hide(400);
-            //$("#portfoliocontainer").hide( "explode", {pieces: 16 }, 2000 );
-            $(item).delay(400).show(400);
+            //$(this).parent().animate({right: "-2000px"}, 800);
+            
+            $("#portfoliocontainer").hide("explode", {pieces:10}, 800);
+            //$("#portfoliocontainer").hide(400);
+            $(item).delay(800).show(800);
          
             
             var color = $(item).css("background-color");
@@ -819,11 +828,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             console.log(color);
             
         //    $("#greaterportfoliocontainer").css("background-color", color);
-            
-
-        
-
-            
+             
         });
         
         $(".return").click(function(){
@@ -907,12 +912,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         });
     
     </script>
-    
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
     
     <script>
         

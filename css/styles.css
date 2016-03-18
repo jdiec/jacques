@@ -394,6 +394,16 @@ html, body {
     color: #000000;
 }
 
+
+.box-3background{
+    background-image: url("../legotables/img/posterbackground.png");
+}
+
+#box-3container img{
+    
+}
+
+
 #box-4container img{
     height: 500px;
     width: 100%;

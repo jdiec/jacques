@@ -105,7 +105,7 @@
     </div>
     
     <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
-        <p style="padding:50px; font-family: 'Pontano Sans', sans-serif; font-size: 12pt; ">My name is Jacques Diec and I am a user experience (UX) and interface (UI) designer residing in Los Angeles, California.  I graduated from Cornell University in 2015.  My greatest passion is interweaving art with technology; creativity with practicality.  This entails designing things that are not just ' pretty ', but logical and intuitive even for the average not so tech-savvy user.  That said, I strongly respect my users and value all feedback that they may provide.  Like customers, they are always 'right', even if their values and opinions differ from mine, because understanding their individual experience is integral to understanding the overall experience that a product may provide.  After all, beauty is but a shell without empathy.  
+        <p style="padding:50px; font-family: 'Pontano Sans', sans-serif; font-size: 12pt; ">My name is Jacques Diec and I am a user experience (UX) and interface (UI) designer residing in Los Angeles, California.  I graduated from Cornell University in 2015.  My greatest passion is interweaving art with technology; the uncanny with the everyday.  This entails designing things that are not just ' pretty ' and fun to look at, but logical and intuitive for the average, not so tech-savvy person.  That said, I strongly respect my users and value all feedback and criticism that they may provide because in the end it both sides are better off.  Understanding people's individual experiences is integral to understanding the overall experience that a product may provide.  After all, beauty is but a shell without empathy.  
         
 <!--        <p>Outside of work, I enjoy spending time with friends, reading, drawing, cooking, playing Poker, and listening to music.  I also spend time outdoors hiking and cycling and have recently added a new hobby of going to the gym.</p>-->
 <!--        <p style="padding:20px;"></p>    -->
@@ -326,7 +326,7 @@
 </div>
 -->
 
-<div id="greaterportfoliocontainer" style="background-color: #e5eaee; display: block;"> <!-- #e5eaee #F0F0F0;-->
+<div id="greaterportfoliocontainer" class="" style="background-color: #e5eaee; display: block;"> <!-- #e5eaee #F0F0F0;-->
 <div id ="portfolio" class="row row-content">
     <p style="padding:30px;"></p>
     <h1 class="text-center" style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt;">Portfolio</h1>
@@ -489,17 +489,37 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     
 <div id="box-2container" class="container" style="display: none;">
     <input class="return" type="image" src="img/return.png"/ height="40" width="40">
-        <center><h1 style="color: #000000;">Project 2</h1></center>
-        <center><h3 style="color: #000000;">Description/caption</h3></center>
+        <center><h1 style="color: #000000;">Simulated Waiting Areas</h1></center>
+        <center><h3 style="color: #000000;">Increasing people's awareness of their busyness</h3></center>
         <p style="padding:30px;"></p>
     
 </div>
     
-<div id="box-3container" class="container" style="display: none;">
+<div id="box-3container" class="container box-3background background" style="display: none;">
     <input class="return" type="image" src="img/return.png"/ height="40" width="40">
-        <center><h1 style="color: #000000;">Project 3</h1></center>
-        <center><h3 style="color: #000000;">Description/caption</h3></center>
-        <p style="padding:30px;"></p>
+        <center><h1 style="color: #000000;">(Re)Buildable Tables</h1></center>
+        <center><h3 style="color: #000000;">Making efficient use of seating in public spaces</h3></center>
+<!--        <p style="padding:30px;"></p>-->
+    
+        <center><a href="legotables/report.pdf" target="_blank" style="font-family: 'Noto Sans', sans-serif; font-size:10pt; color:#000000; text-decoration: none;"><i class="fa fa-file-text fa-fw" style="margin-right:3px;"> </i>Full Report</a></center>
+        <center><a href="legotables/appendix.pdf" target="_blank" style="font-family: 'Noto Sans', sans-serif; font-size:10pt; color:#000000;"><i class="fa fa-file-text fa-fw" style="margin-right:3px;"> </i>Appendix</a></center>
+    
+    <p style="padding: 20px;"></p>
+    
+    <div class="col-xs-10 col-xs-push-1">
+        <center>Problem</center></br>
+        Seating in indoor public spaces has always been an issue on university campuses. In many cases, there are sufficient numbers of chairs and tables to seat everyone, enough to create a surplus. Nevertheless, the root cause of the problem is the inefficient allocation of space, such that people are less likely to sit at tables and areas that are currently being occupied by stranger(s), even if those areas are not full.  
+        
+        <br/><br/><center>Let's solve it! But first, let's understand it.</center></br>
+    
+        We conducted in-person interviews with students and faculty members (e.g. professors) on the Cornell campus regarding this issue. In attempt to alleviate this issue, we proposed three initial prototypes. The first design entailed Lego tables that could be attached together and detached based on the number of occupants, such that each table “block” seats exactly one adult.  The second introduced a (grass) lawn in the center of the indoor area, and lastly, the third entailed a combination of the previous two prototypes. The results of our user testing strongly suggested that most students and faculty members on campus highly advocated the Lego tables with a lawn in the center of the indoor space over traditional and conventional
+    </div>
+    
+    <img src="legotables/img/duffield1.png" class="img-responsive" style="margin: auto; transform: scaleY(0.7);">
+    <img src="legotables/img/duffield2.jpg" class="img-responsive" style="margin: auto;">
+    <img src="legotables/img/duffield3.jpg" class="img-responsive" style="margin: auto;">
+    
+    <img src="legotables/img/tableposter.png" class="img-responsive" style="margin: auto;">
     
 </div>
     
@@ -814,29 +834,32 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     //Portfolio animations
         $("#mainwrapper .box").click(function(){
             
-            var item = "#" + this.id + "container";
+            var item = "#" + this.id + "container"; //target container
+            var background = this.id + "background"; //target background
             
             //$(this).parent().animate({right: "-2000px"}, 800);
             
             $("#portfoliocontainer").hide("explode", {pieces:10}, 800);
-            //$("#portfoliocontainer").hide(400);
-            $(item).delay(800).show(800);
-         
-            
-            var color = $(item).css("background-color");
-            console.log(item);
-            console.log(color);
-            
-        //    $("#greaterportfoliocontainer").css("background-color", color);
-             
+            $(item).delay(800).show(800, function(){;
+                $("#greaterportfoliocontainer").addClass(background).addClass("background");
+            });
         });
         
         $(".return").click(function(){
             
+            var parent = $(this).closest("div").attr("id");
+            var background = parent.substring(0,5) + "background";
+            
+            console.log(parent);
+            console.log(background);
+            
             $(this).parent().hide(400);
             //$("#mainwrapper .box").animate({left: "0px"}, 800);
-            $("#portfoliocontainer").delay(400).show("explode", {pieces:20}, 800);
-            //$("#greaterportfoliocontainer").css("background-color", "#F0F0F0");
+            
+            
+            $("#greaterportfoliocontainer").removeClass(background).removeClass("background");
+            $("#portfoliocontainer").delay(400).show("explode", {pieces:5}, 800);
+            
         });
         
         

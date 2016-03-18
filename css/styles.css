@@ -395,9 +395,30 @@ html, body {
 }
 
 
+.box-1background{
+    background-image: url("../legotables/img/posterbackground.png");
+}
+
+.box-2background{
+    background-image: url("../img/bg-wood.jpg");
+}
+
 .box-3background{
     background-image: url("../legotables/img/posterbackground.png");
 }
+
+.box-4background{
+    background-image: url("../legotables/img/posterbackground.png");
+}
+
+.box-5background{
+    background-image: url("../legotables/img/posterbackground.png");
+}
+
+.box-6background{
+    background-image: url("../legotables/img/posterbackground.png");
+}
+
 
 #box-3container img{
     

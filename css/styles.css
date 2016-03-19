@@ -202,8 +202,16 @@ html, body {
     max-width: 200px;
     max-height: 200px;
 */
+    
+/*
+    min-width: 100%;
+    min-height: 100%;
+*/
+    
     min-width: inherit;
     min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
     position: absolute;
     left: 0;
     -webkit-transition: all 300ms ease-out;
@@ -396,7 +404,9 @@ html, body {
 
 
 .box-1background{
-    background-image: url("../legotables/img/posterbackground.png");
+/*    background-image: url("../legotables/img/posterbackground.png");*/
+        background-image: url("../img/iosgreen.jpg");
+
 }
 
 .box-2background{

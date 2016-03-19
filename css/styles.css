@@ -408,7 +408,7 @@ html, body {
 
 .box-1background{
 /*    background-image: url("../legotables/img/posterbackground.png");*/
-        background-image: url("../img/iosgreen.jpg");
+        background-image: url("../legotables/img/posterbackground.png");
 
 }
 
@@ -417,7 +417,7 @@ html, body {
 }
 
 .box-3background{
-    background-image: url("../legotables/img/posterbackground.png");
+    background-image: url("../img/bg-wood.jpg");
 }
 
 .box-4background{

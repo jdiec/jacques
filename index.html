@@ -129,6 +129,13 @@
             </svg>
         </div>    
         <p style="padding:20px;"></p>
+        
+        <div align="middle" class="">
+            <img class="rightwheel" src="img/gear.svg" width="30" height="30" style="fill: #909090; position: relative; bottom:17px; left:20px;">
+            <img class="leftwheel" src="img/gear.svg" width="50" height="50" style="fill: #909090; position: relative; top:10px; left:5px;">
+            <img class="rightwheel" src="img/gear.svg" width="90" height="90" style="fill: #909090; position: relative; bottom:20px; right:10px;">
+        </div>    
+
         <h2 class="text-center" style="color:#c99065; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt; font-weight: normal;">Skills</h2>
     
     <div class="col-xs-12 col-xs-push-2 col-sm-6 col-sm-push-3">
@@ -780,6 +787,15 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
       });
     });
     </script>
+
+    <script>
+        $(window).scroll(function() {
+          var theta = $(window).scrollTop() % Math.PI;
+          $('.leftwheel').css({ transform: 'rotate(' + theta + 'rad)' });
+          $('.rightwheel').css({ transform: 'rotate(-' + theta + 'rad)' });
+        });
+    </script>
+
 
     <script>
         $('#home').click(function(){

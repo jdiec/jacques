@@ -124,6 +124,9 @@ html, body {
     right: 30px;
 }
 
+.skillbackground{
+    background-image: url("../img/gear.svg");
+}
 
 
 

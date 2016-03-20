@@ -39,7 +39,7 @@
 <!-- Nav bar -->
 <nav class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
-        <div id="legend" style="padding:10px;">
+        <p style="padding:1px;"></p>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -48,13 +48,14 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav nav-pills" style="font-family: 'Noto Sans', sans-serif; font-size:11pt;">
                 <li><a id="home" href="#" >Home</a></li>
-                <li><a href="#about" >About</a></li>
+                <li id="abouttab"><a href="#about" >About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio" >Portfolio</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
         </div>
-        </div>
+        <p style="padding:1px;"></p>
+<!--        </div>-->
     </div>
 </nav>
     
@@ -63,7 +64,7 @@
 <div class="background background-img"> 
     <div class="container-fluid">
         <p style="padding:100px;"></p>
-        <div class="text-center">
+        <div id="title" class="text-center">
             <img class="img-responsive img-circle" src="img/jd.jpg" alt="Jacques">
             <h1 style="font-family: 'Poiret One', cursive; font-size:42pt; color: #FFFFFF;">Jacques Diec</h1>
             <h3 style="padding:5px; font-family: 'Righteous', cursive; font-size: 12pt;">designer / artist / writer / coder</h3>
@@ -105,10 +106,10 @@
     </div>
     
     <div class="col-xs-12 col-xs-push-1 col-sm-9 col-sm-push-2 text-center" align="middle">
-        <p style="padding:50px; font-family: 'Pontano Sans', sans-serif; font-size: 12pt; margin: auto; position:relative; right:43px;">My name is Jacques Diec and I am a user experience (UX) and interface (UI) designer residing in Los Angeles, California.  I graduated from Cornell University in 2015.  My greatest passion is interweaving art with technology; the uncanny with the everyday.  This entails designing things that are not just ' pretty ' and fun to look at, but logical and intuitive for the average, not so tech-savvy person.  That said, I strongly respect my users and value all feedback and criticism that they may provide because in the end it both sides are better off.  Understanding people's individual experiences is integral to understanding the overall experience that a product may provide.  After all, beauty is but a shell without empathy.  
+        <p style="padding:50px; font-family: 'Pontano Sans', sans-serif; font-size: 16pt; color: #707070; margin: auto; position:relative; right:43px;">My name is Jacques Diec and I am a user experience (UX) and interface (UI) designer residing in Los Angeles, California.  &nbsp; I graduated from Cornell University in 2015.  &nbsp; My greatest passion is interweaving art with technology; the uncanny with the everyday.  &nbsp; This entails designing things that are not just ' pretty ' and interesting to look at, but also logical and intuitive for the average, not so tech-savvy person.  &nbsp; That said, I strongly respect my users and value all feedback and criticism that they may provide because in the end it both of us are better off.  &nbsp; Understanding people's individual experience is integral to understanding the overall experience that a product may provide.  &nbsp; After all, beauty is but a shell without empathy.</p>  
         
 <!--        <p>Outside of work, I enjoy spending time with friends, reading, drawing, cooking, playing Poker, and listening to music.  I also spend time outdoors hiking and cycling and have recently added a new hobby of going to the gym.</p>-->
-<!--        <p style="padding:20px;"></p>    -->
+<!--        <p style="padding:10px;"></p>    -->
     </div>
         
 </div>
@@ -131,9 +132,9 @@
         <p style="padding:20px;"></p>
         
         <div align="middle" class="">
-            <img class="rightwheel" src="img/gear.svg" width="30" height="30"  style="fill:#E0E0E0; position: relative; bottom:17px; left:20px;">
-            <img class="leftwheel" src="img/gear2.svg" width="50" height="50" style="fill: #909090; position: relative; top:10px; left:5px;">
-            <img class="rightwheel" src="img/gear3.svg" width="90" height="90"  style="fill:#E0E0E0; position: relative; bottom:20px; right:10px;">
+            <img class="rightwheel" src="img/gear.svg" width="40" height="40"  style="fill:#E0E0E0; position: relative; bottom:17px; left:20px;">
+            <img class="leftwheel" src="img/gear2.svg" width="60" height="60" style="fill: #909090; position: relative; top:10px; left:5px;">
+            <img class="rightwheel" src="img/gear3.svg" width="100" height="100"  style="fill:#E0E0E0; position: relative; bottom:20px; right:10px;">
         </div>    
 
         <p style="padding:5px;"></p>
@@ -197,7 +198,7 @@
             <i class="fa fa-circle-o"></i>
             <i class="fa fa-circle-o"></i>
             <i class="fa fa-circle-o"></i>
-            <i class="fa fa-circle-o"></i>
+            <i class="fa fa-circle-thin"></i>
             <p style="padding: 10px;"></p>
         </div>
         
@@ -274,7 +275,7 @@
             <i class="fa fa-circle-o"></i>
             <i class="fa fa-circle-o"></i>
             <i class="fa fa-circle-o"></i>
-            <i class="fa fa-circle-o"></i>
+            <i class="fa fa-circle-thin"></i>
             <i class="fa fa-circle-thin"></i>
             
             <div id="writingdiv" class="collapse container" style="font-family: 'Pontano Sans', sans-serif; font-size: 11pt;">
@@ -514,11 +515,11 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     
     <p style="padding: 20px;"></p>
     
-    <div class="col-xs-10 col-xs-push-1" style="background-color: #c43452;">
-        <center>Problem</center></br>
-        Seating in indoor public spaces has always been an issue on university campuses. In many cases, there are sufficient numbers of chairs and tables to seat everyone, enough to create a surplus. Nevertheless, the root cause of the problem is the inefficient allocation of space, such that people are less likely to sit at tables and areas that are currently being occupied by stranger(s), even if those areas are not full.  
+    <div class="col-xs-10 col-xs-push-1" style="background-color: #890a43; color:#FFFFFF; font-size: 12pt;">
+       <center>Problem</center></br>
+    Seating in indoor public spaces has always been an issue in university campuses. In many cases, there are sufficient numbers of chairs and tables to seat everyone, enough to create a surplus. Nevertheless, the root cause of the problem is the inefficient allocation of space, such that people are less likely to sit at tables and areas that are currently being occupied by stranger(s), even if those areas are not full.  
         
-        <br/><br/><center>Let's solve it! But first, let's understand it.</center></br>
+        <br/><br/><center>Let's understand the problem.</center></br>
     
         We conducted in-person interviews with students and faculty members (e.g. professors) on the Cornell campus regarding this issue. In attempt to alleviate this issue, we proposed three initial prototypes. The first design entailed Lego tables that could be attached together and detached based on the number of occupants, such that each table “block” seats exactly one adult.  The second introduced a (grass) lawn in the center of the indoor area, and lastly, the third entailed a combination of the previous two prototypes. The results of our user testing strongly suggested that most students and faculty members on campus highly advocated the Lego tables with a lawn in the center of the indoor space over traditional and conventional
     </div>
@@ -773,20 +774,26 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     
     <script>
     $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 800) { // check if user scrolled more than 50 from top of the browser window
-          $(".navbar-fixed-top").css("background-color", "#000000").css("opacity", "0.8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)  
-          $(".nav-pills>li>a").css("color", "#FFFFFF").css("opacity", "1");
-          //$(".nav-pills>li.active>a").css("color", "#000000");
-          $(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");
-        } else {
-          $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
-          //$(".nav-pills>li>a").css("color","#000000");
-          //$(".navbar-toggle .icon-bar").css("background-color", "#000000");
+        $("#title").hide(0).delay(500).fadeIn(3000)
+      
+        
+    });    
+        
+    $(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 800) { 
+              $(".navbar-fixed-top").css("background-color", "#000000").css("opacity", "0.9"); 
+              $(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");
+        } 
+        else {
+              $(".navbar-fixed-top").css("background-color", "transparent"); 
         }
       });
     });
     </script>
+
+
+
 
     <script>
         $(window).scroll(function() {
@@ -795,6 +802,10 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
           $('.rightwheel').css({ transform: 'rotate(-' + theta + 'rad)' });
         });
     </script>
+
+
+
+
 
 
     <script>
@@ -857,7 +868,7 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             //$(this).parent().animate({right: "-2000px"}, 800);
             
             $("#portfoliocontainer").hide("explode", {pieces:10}, 800);
-            $(item).delay(800).show(800, function(){;
+            $(item).delay(800).show(800, function(){
                 $("#greaterportfoliocontainer").addClass(background).addClass("background");
             });
         });

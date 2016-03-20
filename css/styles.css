@@ -54,23 +54,28 @@ html, body {
 
 .nav-pills>li>a{
     color: #FFFFFF;
-/*    color: #000000;*/
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-    background-color: #eee;
-    color: #000000;
+.nav-pills>li.active>a, 
+    .nav-pills>li.active>a:focus, 
+    .nav-pills>li.active>a:hover, 
+    .nav-pills>li>a:hover{
+            background-color: #eee;
+            color: #000000;
+            transition-duration: 500ms;
+            -webkit-transition-duration: 500ms;
+            -moz-transition-duration: 500ms;
+            -o-transition-duration: 500ms;
 }
 
 .navbar-toggle .icon-bar{
     background-color: #000000;
 }
 
-/*
-.nav-pills>li>a:hover{
-    color: #000000;
-}
-*/
 
 #about txt{
     top:20px;
@@ -88,10 +93,15 @@ html, body {
 
 #skills h1{
 /*    color:#996633;*/
-    font-family: 'Poiret One', cursive;
-    font-size: 12pt;
-    color: #909090; 
-    font-weight: bold;
+/*    font-family: 'Poiret One', cursive;*/
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 14pt;
+/*    color: #909090; */
+/*    color: #890a43;*/
+/*    color: #787878; */
+/*    color: #686868; */
+      color: #707070;
+/*    font-weight: bold;*/
     margin-left: 10px;
     margin-right: 200px;
 }
@@ -102,6 +112,7 @@ html, body {
     margin-right: 5px;
     position: relative; 
     left: 15px;
+    font-size: 9pt;
 }
 
 .fa-circle-thin{
@@ -115,7 +126,7 @@ html, body {
 
 .fa-plus-circle, .fa-plus, .fa-minus{
     color: #909090;
-    font-size: 12pt;
+    font-size: 11pt;
     margin-right: 12px;
 }
 

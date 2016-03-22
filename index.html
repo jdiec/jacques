@@ -40,12 +40,12 @@
 <nav class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
         <p style="padding:1px;"></p>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" style="color:#FFFFFF;">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse nav-justified" id="myNavbar">
             <ul class="nav nav-pills" style="font-family: 'Noto Sans', sans-serif; font-size:11pt;">
                 <li><a id="home" href="#" >Home</a></li>
                 <li id="abouttab"><a href="#about" >About</a></li>
@@ -58,26 +58,42 @@
 <!--        </div>-->
     </div>
 </nav>
+
     
-        
+    
+    
+<div id="content">
+    
 <!-- Background -->
 <div class="background background-img"> 
     <div class="container-fluid">
         <p style="padding:100px;"></p>
-        <div id="title" class="text-center">
+<!--
+        <div id="title" class="col-xs-12 text-center" style="position:fixed;">
             <img class="img-responsive img-circle" src="img/jd.jpg" alt="Jacques">
             <h1 style="font-family: 'Poiret One', cursive; font-size:42pt; color: #FFFFFF;">Jacques Diec</h1>
             <h3 style="padding:5px; font-family: 'Righteous', cursive; font-size: 12pt;">designer / artist / writer / coder</h3>
             <p style="padding: 2px;"></p>
             <a href="Resume.pdf" target="_blank"><h4 style="font-family: 'Noto Sans', sans-serif; font-size:11pt;"><i class="fa fa-file-text fa-fw" style="margin-right:3px;"> </i>Resume</h4></a>
+        <i class="fa fa-chevron-down"></i>
         </div>
-        <p style="padding:150px;"></p>
+-->
+        <div id="title" class="col-xs-12 text-center" style="position:relative;">
+            <h3 style="font-family: 'Poiret One', cursive; font-size:18pt; color: #FFFFFF;">Hi, I'm</h1>
+            <h1 style="font-family: 'Poiret One', cursive; font-size:42pt; color: #FFFFFF;">Jacques</h1>
+            <h2 style="font-family: 'Poiret One', cursive; font-size:18pt; color: #FFFFFF;">and I'm a UX Designer.</h1>
+            <p style="padding: 2px;"></p>
+        <i class="fa fa-chevron-down"></i>
+        </div>
+        
+        <p style="padding:300px;"></p>
     </div>
 </div>
 
+    
 <!-- About Me -->
-<div class="container" >
-<div id ="about" class="row row-content">
+<div id ="about" class="container" style="background-color:#FFFFFF;">
+<div class="row row-content">
     <p style="padding:30px;"></p>
      <h1 class="text-center" style="color: #996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt;">About Me</h1>
     <p style="padding:20px;"></p>
@@ -107,23 +123,23 @@
     
     <div class="col-xs-12 col-xs-push-1 col-sm-9 col-sm-push-2 text-center" align="middle">
         <p style="padding:50px; font-family: 'Pontano Sans', sans-serif; font-size: 16pt; color: #707070; margin: auto; position:relative; right:43px;">My name is Jacques Diec and I am a user experience (UX) and interface (UI) designer residing in Los Angeles, California.  &nbsp; I graduated from Cornell University in 2015.  &nbsp; My greatest passion is interweaving art with technology; the uncanny with the everyday.  &nbsp; This entails designing things that are not just ' pretty ' and interesting to look at, but also logical and intuitive for the average, not so tech-savvy person.  &nbsp; That said, I strongly respect my users and value all feedback and criticism that they may provide because in the end it both of us are better off.  &nbsp; Understanding people's individual experience is integral to understanding the overall experience that a product may provide.  &nbsp; After all, beauty is but a shell without empathy.</p>  
-        
-<!--        <p>Outside of work, I enjoy spending time with friends, reading, drawing, cooking, playing Poker, and listening to music.  I also spend time outdoors hiking and cycling and have recently added a new hobby of going to the gym.</p>-->
-<!--        <p style="padding:10px;"></p>    -->
     </div>
         
 </div>
-</div>
 
-<svg id = "divider" class= "hidden-xs" width = "250" height = "5">
-    <line x1="0" y1="1" x2="250" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
-</svg>    
+    <svg id = "divider" class= "hidden-xs" width = "250" height = "5">
+        <line x1="0" y1="1" x2="250" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
+    </svg>    
+   
+</div>
+    
+    
     
     
 <!--Skills-->
-<div style="background-color: #FFFFFF;"> <!-- #F0F0F0; #e5eaee; #d1e7fc;-->
+<div id="skills" style="background-color: #FFFFFF;"> <!-- #F0F0F0; #e5eaee; #d1e7fc;-->
 <div class="container">
-    <div id="skills" class="row row-content">
+    <div class="row row-content">
         <div class="visible-xs">
             <svg id = "divider" width = "100" height = "5">
                 <line x1="0" y1="1" x2="100" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
@@ -325,17 +341,11 @@
             <p style="padding:50px;"></p>
 </div>  
 </div>
-    
-    
-<!--
-<div class="background background-img2">
-    <p style="padding:50px;"></p>
-        <center><h4 style="color:#FFFFFF; z-index:-10; font-family: 'Indie Flower', cursive; font-size: 14pt;">I think, therefore I make.</h4></center>
-    <p style="padding:50px;"></p>
-</div>
--->
+  
 
-<div id="greaterportfoliocontainer" class="" style="background-color: #e5eaee; display: block;"> <!-- #e5eaee #F0F0F0;-->
+
+
+<div id="greaterportfoliocontainer" class="" style="background-color: #e5eaee;"> <!-- #e5eaee #F0F0F0;-->
 <div id ="portfolio" class="row row-content">
     <p style="padding:30px;"></p>
     <h1 class="text-center" style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt;">Portfolio</h1>
@@ -477,23 +487,8 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         </div>
         </div>
     
-<!--
-        <div class="col-xs-12 col-sm-8" style="background-color: #FFFF99; border-radius: 20px;">
-            <p style="padding:10px;"></p>
-            <center><h3 style="color: #CC3300;">Goal:<br/> Increase people's daily step count using a simple, persuasive technique.</h3></center>
-            <p style="padding:30px;"></p>
-        </div>
--->
             
-<!--
-        <div class="col-xs-12 col-sm-8" style="background-color: #E8E8E8;">
-              <p style="padding:30px;"></p>
-              <div class="container">
-              <center><h4 style="color:#000000;">Description:<br/>The application is written in Java and integrates Google's Maps API and Android <a href="https://play.google.com/store/apps/details?id=com.protogeo.moves&hl=en">Moves</a>, which uses the device's motion sensor to track the number of steps the user takes.</h4></center>
-              </div>
-            <p style="padding:30px;"></p>
-        </div>    
--->
+
 </div>
     
 <div id="box-2container" class="container box-2background background" style="display: none;">
@@ -575,11 +570,6 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     
     
     
-    
-    
-    
-    
-    
 <div id="box-6container" class="container-fluid background box-6background" style="display: none;">
     <input class="return" type="image" src="img/return.png"/ height="40" width="40">
         <center><h1 style="color: #000000;">Fine Art</h1></center>
@@ -640,42 +630,36 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         </div>
         
         <p style="padding:100px;"></p>
-
     
     
 </div>    
-    
-    
-    
     
 <p style="padding:60px;"></p>
 </div>
 </div>
 
-<!--
-<div class="background background-img3">
-    <p style="padding:50px;"></p>
-    <center><h4 style="color:#FFFFFF; font-family: 'Indie Flower', cursive; font-size: 14pt;">Beauty is but a shell without</h4></center>
-    <center><h4 style="color:#FFFFFF; font-family: 'Indie Flower', cursive; font-size: 14pt;">empathy.</h4></center>
-    <p style="padding:50px;"></p>
-</div>
--->
+    
  
-<div class="container">    
-<div id ="contact" class="row row-content">
+<div id ="contact" class="container-fluid" style="background-color: #FFFFFF; z-index:10;">    
+<div class="row row-content">
     <p style="padding:30px;"></p>
     <h1 class="text-center"  style="color:#996633; font-family: 'Alegreya Sans SC', sans-serif; font-size: 18pt;">Contact</h1>
     <p style="padding:5px;"></p>
     <svg id = "divider" class= "" width = "100" height = "5">
         <line x1="0" y1="1" x2="250" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
     </svg>
+    
+<!--
+    <div class="col-xs-12 col-xs-push-5">
+    <img src="img/phone.png" height="50" width="50">
+    <img src="img/email.png" height="50" width="50">
+    <img src="img/linkedin.png" height="50" width="50">
+    </div>
+-->
+    
     <p style="padding: 7px;"></p>
     <center><p style="font-size: 12pt; color: #989898; font-family: 'Noto Sans', sans-serif;">Alternatively, you can email me at</br> <a id="emaillink" style="font-size: 12pt;" href="mailto:jpd276@cornell.edu">jpd276@cornell.edu</a>.</p></center>
-<!--
-    <svg id = "divider" class= "hidden-xs" width = "100" height = "5">
-        <line x1="0" y1="1" x2="250" y2="1" style="stroke: #909090; stroke-width: 0.5;"/>
-    </svg>
--->
+
     <div class="col-xs-12 col-sm-8 col-sm-push-2">
 <!--    <center>Let's work together.</center>-->
     <p style="padding:7px;"></p>
@@ -707,15 +691,16 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     
     </div>
 </div>
+    <p style="padding:50px;"></p>
 </div>        
         
-    <p style="padding:50px;"></p>
 <!-- Footer -->
 <div class="background background-img4">
     <p style="padding:20px;"></p>
     <footer class="row-footer">
         <div class="container">
             <div class="row">             
+<!--
                 <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
@@ -725,6 +710,8 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+-->
+<!--
                 <div class="col-xs-5 col-sm-4 address">
                     <h5>Location</h5>
                     <address>
@@ -734,26 +721,33 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
                         <i class="fa fa-envelope"></i>:                                                                     <a href="mailto:jpd276@cornell.edu">jpd276@cornell.edu</a>
 		           </address>
                 </div>
-                <div class="col-xs-12 col-xs-push-5 col-md-4 col-md-push-0">
-                    <div class="nav navbar-nav" style="padding: 40px 10px;">
-<!--                        <a class="btn btn-circle btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>-->
-<!--                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>-->
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-<!--                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>-->
-<!--                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>-->
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
+-->
+                
+<!--                <center><p style="position:fixed; bottom:100px; right:30px; font-family: 'Indie Flower', cursive;">Beauty is but a shell without empathy.</p></center>-->
+                
+
+                <div id="socialicons" class="col-xs-12 col-xs-push-3 col-sm-push-5" style="position:fixed; bottom:140px; z-index: 0;">
+                    <img src="img/phone.png" height="50" width="50">
+                    <img src="img/email.png" height="40" width="40">
+                    <img src="img/linkedin.png" height="40" width="40">
+                    <p align="center" style="font-size:10pt; color:#909090; position:fixed; bottom:0px;">© Copyright 2016 Jacques Diec</p>
                 </div>
-                <div class="col-xs-12">
-                    <p style="padding:10px;"></p>
-                    <p align="center" style="font-size: 10pt;">© Copyright 2016 Jacques Diec</p>
-                </div>
+
+                    <p style="padding:60px;"></p>
+                
+                <p id="phoneiconlabel">(626) 627-1768</p>
+                <p id="emailiconlabel">jpd276@cornell.edu</p>
+                <p id="linkediniconlabel">linkedin.com/..</p>
+        
             </div>
         </div>
     </footer>
-    <p style="padding:50px;"></p>
-</div>    
-    
+</div>
+
+</div>
+
+
+
 <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -773,29 +767,68 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
 
     
     <script>
+    //HOME
+        //Hide and show title
     $(document).ready(function(){
-        $("#title").hide(0).delay(500).fadeIn(3000)
-      
+        $('#title').hide(0);
+        if ($(document).scrollTop() <= 800){
+            $('#title').each(function(index){
+                $(this).delay(400*index).fadeIn(3000);
+            });
+        }
         
     });    
         
+    //NAVBAR    
     $(document).ready(function(){
+        if ($(document).scrollTop() > 800) { 
+              $(".navbar-fixed-top").css("background-color", "#000000").css("opacity", "0.9"); 
+              $(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");    
+        }
+        
       $(window).scroll(function() { 
         if ($(document).scrollTop() > 800) { 
               $(".navbar-fixed-top").css("background-color", "#000000").css("opacity", "0.9"); 
               $(".navbar-toggle .icon-bar").css("background-color", "#FFFFFF");
+              $('#title').hide();
         } 
         else {
-              $(".navbar-fixed-top").css("background-color", "transparent"); 
+              $('#title').fadeIn(800);
+              if ($(window).width() < 960 && $('.navbar-collapse').is(':visible')) {              
+                    $(".navbar-fixed-top").css("background-color", "#000000"); 
+                    return false;
+            }
+              $(".navbar-fixed-top").css("background-color", "transparent");
         }
       });
     });
     </script>
 
 
+    <script>
+        //FOOTER
+            //Social icons
+            $(document).ready(function(){
+                    if($(window).scrollTop()<$('#contact').offset().top){
+                        $('#socialicons').hide();
+                    }
+                $(window).scroll(function(){
+                    if($(window).scrollTop()<$('#contact').offset().top){
+                        $('#socialicons').hide();
+                    }
+                    else{
+                        $('#socialicons').show();
+                    }    
+
+                }); 
+            });
+
+    </script>
 
 
     <script>
+    //SKILLS
+        //Rotating cogs
         $(window).scroll(function() {
           var theta = $(window).scrollTop() % Math.PI;
           $('.leftwheel').css({ transform: 'rotate(' + theta + 'rad)' });
@@ -805,10 +838,9 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
 
 
 
-
-
-
     <script>
+    //NAVBAR 
+        //Smooth scroll to destination
         $('#home').click(function(){
             window.scrollTo(0,0);
         });
@@ -832,15 +864,35 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     </script>
     
     <script>
+    //NAVBAR COLLAPSED
         //Stack menu when collapsed
         $('#myNavbar').on('show.bs.collapse', function() {
-            $('.nav-pills').addClass('nav-stacked');
+            $('.nav-pills').addClass('nav-stacked').css('width','100%');
+            if ($(window).width() < 960) {
+                    $(".navbar-fixed-top").css("background-color", "#000000");
+            }
         });
+        $('#myNavbar').on('hidden.bs.collapse', function(){
+            $(".navbar-fixed-top").css("background-color", "transparent");
+            $('.nav-pills').removeClass('nav-stacked').css('width','auto');
+        });
+        
+//        $(window).on('resize', function(){
+//            var win = $(this); //this = window
+//            if (win.height() >= 820) { /* ... */ }
+//            if (win.width() >= 1280) { 
+//                $('.nav-pills').removeClass('nav-stacked');
+//            }
+//            else{
+//                $('.nav-pills').removeClass('nav-stacked');
+//            }
+//        });
+        
     
     </script>
     
     <script>
-    //Skills section
+    //SKILLS
         //Change + and - icons on collapse/expand
         $('.collapse').on('shown.bs.collapse', function() {
             var anc = this.closest('.skillz');
@@ -858,15 +910,13 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
 
     
     <script type = "text/javascript" language = "javascript">
-    //Portfolio animations
-        
+    //PORTFOLIO
+        //Animations
         $("#mainwrapper .box").click(function(){
             
             var item = "#" + this.id + "container"; //target container
             var background = this.id + "background"; //target background
-            
-            //$(this).parent().animate({right: "-2000px"}, 800);
-            
+                        
             $("#portfoliocontainer").hide("explode", {pieces:10}, 800);
             $(item).delay(800).show(800, function(){
                 $("#greaterportfoliocontainer").addClass(background).addClass("background");
@@ -881,18 +931,32 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             console.log(parent);
             console.log(background);
             
-            $(this).parent().hide(400);
-            //$("#mainwrapper .box").animate({left: "0px"}, 800);
             
+            $('html,body').animate({scrollTop: $("#greaterportfoliocontainer").offset().top}, 'slow');
+            
+            $(this).parent().hide(400);
             
             $("#greaterportfoliocontainer").removeClass(background).removeClass("background");
             $("#portfoliocontainer").delay(400).show("explode", {pieces:5}, 800);
             
+            
         });
         
-        
-        
-        
+        //PORTFOLIO SECTION
+            //Fix the return button within the content
+        $(window).scroll(function(){
+            
+                var scrollposition = $(window).scrollTop();
+                var top = $('#greaterportfoliocontainer').offset().top;
+                var bottom = $('#greaterportfoliocontainer').outerHeight(true);
+                        
+                if ((scrollposition > top) && (scrollposition < (top + bottom - 160)))  {
+                    $('.return').addClass('fixed');
+                }
+                else {
+                    $('.return').removeClass('fixed');
+                }
+        });
         
 
         
@@ -906,7 +970,8 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
     </script>
     
     <script>
-    //Form animations
+    //CONTACT
+        //Floating form labels
         $(function(){
               $("input").bind("checkval",function(){
                 var label = $(this).siblings("label");  
@@ -939,34 +1004,11 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
         
 
     </script>
-    
-    <script>
-        $("#archivebutton").click(function(){
-            if($("#mycarousel").css('display') == 'none'){
-                return false;
-            }
-            $("#mycarousel").fadeOut(1000);
-            $("#archive").fadeToggle(3000);
-        });
-        
-        $("#slideshowbutton").click(function(){
-            if($("#archive").css('display') == 'none'){
-                return false;
-            }
-            $("#archive").fadeOut(2000);
-            $("#mycarousel").fadeToggle(2000);
-        });
-        
-        $("#art").click(function(){
-           $("#archive").fadeOut(2000);
-           $("#artportfolio").fadeToggle(2000);    
-        });
-    
-    </script>
 
     
     <script>
-        
+    //CONTACT
+        //Form Validation
         $('#contactForm').validate({
             rules: {
                 Name: {
@@ -985,6 +1027,21 @@ We conducted an anonymous online and/or in-person survey (Figure 2) depending on
             }
         });
     </script>
+
+    <script>
+
+        $('.row-footer a').mouseover(function(){                
+                var id = "#" + $(this).attr('id') + "label";
+                $(id).stop().fadeIn(500);
+        });
+        $('.row-footer a').mouseout(function(){                
+                var id = "#" + $(this).attr('id') + "label";
+                $(id).stop().fadeOut(100);
+        });
+    
+
+    </script>
+
 
 </body>
 </html>

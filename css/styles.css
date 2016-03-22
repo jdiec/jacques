@@ -1,8 +1,19 @@
 html, body { 
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+
+#content{
+   position: relative;
+}
+
+#about, #skills, #contact{
+    position: relative;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .background{
+    position: relative;
     min-height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -11,9 +22,19 @@ html, body {
     z-index: 1;
 }
 
+
 .background-img{
     background-image: url('../img/snow.png');
+
 }
+
+.fa-chevron-down{
+    color:#FFFFFF;
+}
+
+
+
+
 
 .background-img2{
     background-image: url('../img/snow.png');
@@ -39,6 +60,8 @@ html, body {
     width: 20%;
     height: 20%;
 }
+
+
 
 .nav>li>a{
     color: #FFFFFF;
@@ -73,7 +96,7 @@ html, body {
 }
 
 .navbar-toggle .icon-bar{
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 
 
@@ -135,12 +158,9 @@ html, body {
     right: 30px;
 }
 
-.skillbackground{
-    background-image: url("../img/gear.svg");
-}
 
 
-
+/*
 
 .carousel {
     background:#1A237E;
@@ -174,6 +194,7 @@ html, body {
     color: #000000;
     background-color: #FFFFFF;
 }
+*/
 
 
 
@@ -406,6 +427,13 @@ html, body {
 }
 
 
+.return.fixed{
+    position: fixed;
+    top: 100px;
+    left: 70px;
+}
+
+
 
 #artportfolio img{
     height: 200px;
@@ -418,7 +446,6 @@ html, body {
 
 
 .box-1background{
-/*    background-image: url("../legotables/img/posterbackground.png");*/
         background-image: url("../legotables/img/posterbackground.png");
 
 }
@@ -466,21 +493,6 @@ html, body {
     -o-transform: scale(0.8);
     -moz-transform: scale(0.8);
 }
-
-iframe, object, embed {
-/*        max-width: 100%; !important;*/
-}
-
-
-#miniframe iframe{
-    width: 500px;
-    position: relative;
-    right: 10px;
-    -webkit-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-}
-
 
 
 #box-6container img{
@@ -558,9 +570,7 @@ iframe, object, embed {
 }
 
 #emaillink:hover{
-/*    font-weight: bold;*/
     color: red;
-/*    color: #996633;*/
 }
 
 a.btn-submit, #submitbutton {
@@ -572,7 +582,12 @@ a.btn-submit, #submitbutton {
     border-color: #909090;
     position: relative;
     top: 30px;
-    left: 35%;
+    left: 42%;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    -ms-transition: 500ms;
 }
 
 a.btn-submit:hover, #submitbutton:hover{
@@ -587,10 +602,6 @@ a.btn-submit:hover, #submitbutton:hover{
 /*    background-color: #000000;*/
 }
 
-.row-footer a {
-    color: #FFFFFF;
-}
-
 .row-footer p, h2, h3, h4, h5, address{
     color: #FFFFFF;
 }
@@ -599,36 +610,40 @@ a.btn-submit:hover, #submitbutton:hover{
     font-size: 18pt;
 }
 
+.row-footer a {
+    color: #FFFFFF;
+    transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+
+}
+
 .row-footer a:hover {
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 14pt;
     color: #CCCC66;
+    position: relative;
+    bottom: 2px;
 }
 
-.btn-google-plus, .btn-facebook, .btn-linkedin, .btn-twitter, .btn-youtube {
-    -webkit-transition: margin 0.2s ease-out;
-    -moz-transition: margin 0.2s ease-out;
-    -o-transition: margin 0.2s ease-out;
+
+.row-footer img{
+    margin-right: 10px;
 }
 
-.btn-google-plus:hover, .btn-facebook:hover, .btn-linkedin:hover, .btn-twitter:hover, .btn-youtube:hover {
-	cursor:pointer;
-    margin-top: -10px;
+
+#phoneiconlabel, 
+        #emailiconlabel, 
+        #linkediniconlabel{
+    font-size: 14pt;
+    color: #FFFFFF;
+    display: none;
+    text-align: center;
+}
+
+.row-footer p{
     color: #FFFFFF;
 }
-
-
-/*
-.btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.42;
-  border-radius: 15px;
-}
-*/
 
 
 
